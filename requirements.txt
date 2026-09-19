@@ -1,0 +1,4 @@
+# PersonalBrain Core Dependencies
+# Core system is 100% self-contained with zero external package dependencies.
+# Optional for development:
+# pytest>=7.0.0
