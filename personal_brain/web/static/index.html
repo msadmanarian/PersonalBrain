@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PersonalBrain — AI-Augmented Exocortex & Cognitive Life OS</title>
+  <meta name="description" content="Local-first Second Brain, Zettelkasten Knowledge Graph, Spaced Repetition (SM-2), and GTD Task DAG Engine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="glow-orb orb-primary"></div>
+  <div class="glow-orb orb-secondary"></div>
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo-badge"><span class="pulse-dot"></span>PERSONALBRAIN</div>
+      <span class="tagline">AI-Augmented Exocortex & Life Operating System</span>
+    </div>
+    <nav class="nav-tabs">
+      <button class="nav-tab active" data-target="panel-graph">🕸️ Neural Graph</button>
+      <button class="nav-tab" data-target="panel-notes">📝 Notes & Zettel</button>
+      <button class="nav-tab" data-target="panel-review">🧠 Spaced Repetition</button>
+      <button class="nav-tab" data-target="panel-tasks">⚡ Tasks & CPM</button>
+      <button class="nav-tab" data-target="panel-search">🔍 Hybrid Search</button>
+    </nav>
+    <div class="status-pill"><span class="status-indicator"></span><span id="node-count-indicator">Nodes: Active</span></div>
+  </header>
+  <main class="main-container">
+    <section class="panel active" id="panel-graph">
+      <div class="panel-header">
+        <h1>Interactive Neural Knowledge Graph</h1>
+        <p class="subtitle">Real-time force-directed canvas displaying interlinked concepts, PageRank centrality, and semantic clusters.</p>
+      </div>
+      <div class="glass-card canvas-container">
+        <canvas id="brainCanvas" width="980" height="540"></canvas>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
