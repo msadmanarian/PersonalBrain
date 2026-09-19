@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personal-brain"
+version = "1.0.0"
+description = "AI-Augmented Exocortex & Cognitive Life Operating System"
+readme = "README.md"
+authors = [
+  { name = "Sadman Arian", email = "msadmanarian@gmail.com" }
+]
+license = { text = "MIT" }
+keywords = ["pkm", "second-brain", "knowledge-graph", "zettelkasten", "spaced-repetition", "gtd"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.14",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/msadmanarian/PersonalBrain"
+Repository = "https://github.com/msadmanarian/PersonalBrain.git"
+
+[project.scripts]
+brain = "personal_brain.cli.parser:main"
